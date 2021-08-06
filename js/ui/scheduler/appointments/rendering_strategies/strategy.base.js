@@ -87,7 +87,10 @@ class BaseRenderingStrategy {
 
         const map = [];
         for(let i = 0; i < length; i++) {
+            
+            const dateNow = Date.now();
             let coordinates = this._getItemPosition(items[i]);
+            window.getItemPosition += Date.now() - dateNow;
 
             if(this.rtlEnabled) {
                 coordinates = this._correctRtlCoordinates(coordinates);
