@@ -1,5 +1,2 @@
-The slowest function in createTaskPositionMap is _getItemPosition, generateAppointmentSettings takes the most time in it (on the average 43.(3) ms,
-this is not a lot in comparison with the calculation of geometry taking an average of 3.9 ms, 11 times more). ~19% of the time generateAppointmentSettings
-is occupied by the calculation of cell positions (on the average 8.(3) ms), the rest of the time (69%, on the average 29.8 ms) is taken by _prepareAppointmentInfos.
-Most of the time is spent on the method "cropAppointmentsByStartDayHour" - on the average 8.5(3) ms (!!! it is 28.6% !!!).
+The slowest function in createTaskPositionMap is _getItemPosition, generateAppointmentSettings takes the most time in it (on the average 43.(3) ms, this is not a lot in comparison with the calculation of geometry taking an average of 3.9 ms, 11 times more). ~19% of the time generateAppointmentSettings is occupied by the calculation of cell positions (on the average 8.(3) ms), the rest of the time (69%, on the average 29.8 ms) is taken by _prepareAppointmentInfos. Most of the time is spent on the method "cropAppointmentsByStartDayHour" - on the average 8.5(3) ms (!!! it is 28.6% !!!).
 There are two more slow methods in this function: createAppointments - 3.2 ms, createGridAppointmentList - 3.2 ms.
