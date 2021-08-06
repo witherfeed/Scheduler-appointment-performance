@@ -11,6 +11,7 @@ There are two more slow methods in this function: createAppointments - 3.2 ms, c
 |:----------------------:|:----------:|:-----------------:|:------------------:|
 | calculateCellPositions |   19.23    |       19.15       |        8.(3)       |
 |prepareAppointmentInfos |     69     |       68.77       |        29.8        |
+
 *PF GAS T - partt from generateAppointmentSettings time.
 
 |      function/case name      |PF PAI T*, %|PF GAS T, %| amount of time, % | amount of time, ms |
@@ -18,4 +19,5 @@ There are two more slow methods in this function: createAppointments - 3.2 ms, c
 |cropAppointmentsByStartDayHour|    28.64   |   19.69   |       18.27       |       8.5(3)       | !!!!!!
 |     createAppointments       |    10.74   |   7.38    |        6.85       |        3.2         |
 |  createGridAppointmentList   |    10.74   |   7.38    |        6.85       |        3.2         |
+
 *PF PAI T - partt from prepareAppointmentInfos time.
