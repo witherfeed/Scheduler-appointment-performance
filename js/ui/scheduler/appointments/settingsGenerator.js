@@ -306,15 +306,15 @@ export class DateGeneratorBaseStrategy {
             : this.dateRange[0];
         const endViewDateByEndDayHour = this.dateRange[1];
 
-        // if(this.timeZone) {
-        //     startViewDate = this.timeZoneCalculator.createDate(startViewDate, { path: 'fromGrid' });
-        //     endViewDateByEndDayHour = this.timeZoneCalculator.createDate(endViewDateByEndDayHour, { path: 'fromGrid' });
+        if(this.timeZone) {
+            startViewDate = this.timeZoneCalculator.createDate(startViewDate, { path: 'fromGrid' });
+            endViewDateByEndDayHour = this.timeZoneCalculator.createDate(endViewDateByEndDayHour, { path: 'fromGrid' });
 
-        //     const daylightOffset = timeZoneUtils.getDaylightOffsetInMs(startViewDate, endViewDateByEndDayHour);
-        //     if(daylightOffset) {
-        //         endViewDateByEndDayHour = new Date(endViewDateByEndDayHour.getTime() + daylightOffset);
-        //     }
-        // }
+            const daylightOffset = timeZoneUtils.getDaylightOffsetInMs(startViewDate, endViewDateByEndDayHour);
+            if(daylightOffset) {
+                 endViewDateByEndDayHour = new Date(endViewDateByEndDayHour.getTime() + daylightOffset);
+            }
+        }
 
         return [
             startViewDate,
