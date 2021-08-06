@@ -6,7 +6,8 @@ There are two more slow methods in this function: createAppointments - 3.2 ms, c
 |            getItemPosition            |        94.8       |        44.27       |
 |                geometry               |        8.35       |         3.9        |
 |      generateAppointmentSettings      |        92.8       |       43.(3)       |
+
+|   function/case name   |AOT, %|AOT, ms| amount of time, % | amount of time, ms |
 |:----------------------:|:----:|:-----:|:-----------------:|:------------------:|
-|   function/case name   |AOT, %|AOT, ms|                   |                    |
 | calculateCellPositions |43.(3)|       |        19.15      |        8.(3)       |
 |                        |      |       |                   |                    |
