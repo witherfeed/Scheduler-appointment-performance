@@ -112,9 +112,13 @@ class AppointmentLayoutManager {
         window.createAppointments = 0;
         window.createGridAppointmentList = 0;
         window.cropAppointmentsByStartDayHour = 0;
+        window.createTaskPositionMap = Date.now();
 
         this._positionMap = this.getRenderingStrategyInstance().createTaskPositionMap(appointments);
 
+        createTaskPositionMap = Date.now() - createTaskPositionMap;
+        
+        console.log('createTaskPositionMap', createTaskPositionMap);
         console.log('generateAppointmentSettings', generateAppointmentSettings);
         console.log('dateSettingsTime', dateSettingsTime);
         console.log('positionsTime', positionsTime);
