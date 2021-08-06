@@ -16,7 +16,7 @@ There are two more slow methods in this function: createAppointments - 3.2 ms, c
 
 |      function/case name      |PF PAI T*, %|PF GAS T, %| amount of time, % | amount of time, ms |
 |:----------------------------:|:----------:|:---------:|:-----------------:|:------------------:|
-|cropAppointmentsByStartDayHour|    28.64   |   19.69   |       18.27       |    8.5(3) !!!!!!   |
+|```!diffcropAppointmentsByStartDayHour```|    28.64   |   19.69   |       18.27       |    8.5(3) !!!!!!   |
 |     createAppointments       |    10.74   |   7.38    |        6.85       |        3.2         |
 |  createGridAppointmentList   |    10.74   |   7.38    |        6.85       |        3.2         |
 
