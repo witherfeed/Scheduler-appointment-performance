@@ -106,6 +106,7 @@ class AppointmentLayoutManager {
         this._initRenderingStrategy();
 
         window.generateAppointmentSettings = 0;
+        window.getItemPosition = 0;
         window.dateSettingsTime = 0;
         window.positionsTime = 0;
         window.geometryTime = 0;
@@ -117,8 +118,9 @@ class AppointmentLayoutManager {
         this._positionMap = this.getRenderingStrategyInstance().createTaskPositionMap(appointments);
 
         createTaskPositionMap = Date.now() - createTaskPositionMap;
-        
+
         console.log('createTaskPositionMap', createTaskPositionMap);
+        console.log('getItemPosition', getItemPosition);
         console.log('generateAppointmentSettings', generateAppointmentSettings);
         console.log('dateSettingsTime', dateSettingsTime);
         console.log('positionsTime', positionsTime);
